@@ -28,7 +28,7 @@ public class JpaMemberRepository implements MemberRepository{
     public Optional<Member> findById(Long id) {
         // find(조회할 타입, 식별자) -> select문 생성
         Member member = em.find(Member.class, id);
-        return Optional.ofNullable(member);z
+        return Optional.ofNullable(member);
     }
 
     @Override
